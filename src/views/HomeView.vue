@@ -69,6 +69,7 @@ const cv = ref("CV.pdf");
         ></div>
       </div>
     </div>
+
     <div class="absolute bottom-0 right-0 pointer-events-none">
       <img src="@/assets/images/home.png" alt="portret_image" />
     </div>

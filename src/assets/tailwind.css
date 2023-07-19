@@ -32,6 +32,16 @@ section {
   padding: 10rem 7% 2rem;
 }
 
+section:first-of-type::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 975px;
+  background: #754ef9;
+}
+
 /* header hover */
 
 .navigation::after {

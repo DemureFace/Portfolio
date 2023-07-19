@@ -47,7 +47,7 @@ const cv = ref("CV.pdf");
         class="absolute top-1/2 right-0 -translate-y-2/4 w-[975px] h-[975px] overflow-hidden pointer-events-none"
       >
         <div
-          class="absolute top-0 right-0 w-full h-full rounded-full flex justify-center items-center"
+          class="absolute top-0 right-0 w-full h-full rounded-full flex justify-center items-center animate-spin"
         >
           <div
             v-for="circle in circleInfo"
@@ -68,6 +68,9 @@ const cv = ref("CV.pdf");
           class="absolute top-0 right-0 w-0 h-0 border-t-[488px] border-r-[488px] border-b-[488px] border-primary border-l-[488px] border-l-transparent"
         ></div>
       </div>
+    </div>
+    <div class="absolute bottom-0 right-0 pointer-events-none">
+      <img src="@/assets/images/home.png" alt="portret_image" />
     </div>
   </section>
 </template>

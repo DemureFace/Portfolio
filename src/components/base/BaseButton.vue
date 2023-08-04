@@ -8,6 +8,10 @@ const props = defineProps({
     type: String,
     default: "button",
   },
+  theme: {
+    type: String,
+    default: "",
+  },
   path: {
     type: String,
     default: "",
@@ -31,6 +35,8 @@ const props = defineProps({
   <component
     :class="{
       ' underline hover:no-underline': tag === 'a',
+      'inline-block bg-primary rounded-[.6rem] border-[.2rem] border-transparent no-underline text-bg hover:bg-transparent hover:text-primary hover:border-primary transition-all duration-500':
+        theme === 'primary',
     }"
     :is="tag"
     :to="{ name: path }"

@@ -10,7 +10,9 @@ module.exports = {
         shadow: "rgba(0,0,0, .2)",
       },
       boxShadow: {
-        social: "0 .2rem .5rem rgba(0,0,0, .2)",
+        primary: "0 .2rem .5rem rgba(0,0,0, .2)",
+        header: "0 -.6rem 1.5rem #754ef9",
+        cards: "0 .1rem .5rem rgba(0,0,0, .2)",
       },
       animation: {
         spin: "spin 10s linear infinite",

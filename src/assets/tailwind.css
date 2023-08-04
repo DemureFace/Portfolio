@@ -32,7 +32,7 @@ section {
   padding: 10rem 7% 2rem;
 }
 
-section:first-of-type::after {
+.home::after {
   content: "";
   position: absolute;
   top: 0;
@@ -48,10 +48,10 @@ section:first-of-type::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -3px;
   width: 100%;
   height: 3px;
-  background: #fff;
+  background: var(--after-color);
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
@@ -65,4 +65,13 @@ section:first-of-type::after {
 
 .circle-transform {
   transform: rotate(calc(360deg / 4 * var(--i)));
+}
+
+.router-link-active:not(:first-child) {
+  color: #754ef9;
+  border-bottom: 3px solid #333;
+}
+
+.router-link-active {
+  border-bottom: 3px solid #fff;
 }

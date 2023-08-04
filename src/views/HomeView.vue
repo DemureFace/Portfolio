@@ -8,13 +8,10 @@ import BaseButton from "@/components/base/BaseButton.vue";
 const titleInfo = ref(homeData?.homeInfo || []);
 const socialMedia = ref(homeData?.socialMedia || []);
 const circleInfo = ref(homeData?.circleInfo || []);
-
-const cvUrl = ref("@/assets/cv/CV.pdf");
-const cv = ref("CV.pdf");
 </script>
 
 <template>
-  <section class="flex items-center">
+  <section class="flex items-center home">
     <div class="max-w-[50rem]">
       <h3 class="text-[3.2rem] font-bold leading-[.3]">
         {{ titleInfo[0].title }}
@@ -28,7 +25,7 @@ const cv = ref("CV.pdf");
           :key="social"
           tag="a"
           :link="social.link"
-          textClasess="inline-flex justify-center items-center w-16 h-16 bg-transparent border-[.2rem] text-[2rem] text-primary hover:bg-primary hover:text-bg border-primary rounded-full shadow-social my-10 mx-6 mb-12 ml-0 transition-all duration-500"
+          textClasess="inline-flex justify-center items-center w-16 h-16 bg-transparent border-[.2rem] text-[2rem] text-primary hover:bg-primary hover:text-bg border-primary rounded-full shadow-primary my-10 mx-6 mb-12 ml-0 transition-all duration-500"
         >
           <i :class="'bx bxl-' + social.name" class=""></i>
         </BaseButton>
@@ -36,15 +33,15 @@ const cv = ref("CV.pdf");
 
       <BaseButton
         tag="a"
-        :link="cvUrl"
-        :download="cv"
-        class="inline-block py-[1.2rem] px-[2.8rem] bg-primary rounded-[.6rem] border-[.2rem] border-transparent shadow-social text-[1.6rem] text-bg tracking-[.1rem] font-semibold no-underline hover:bg-transparent hover:text-primary hover:border-primary transition-all duration-500"
+        theme="primary"
+        link="https://files.fm/u/c4vhvawyw#/view/vmpps5v9u"
+        class="py-[1.2rem] px-[2.8rem] text-[1.6rem] text-bg tracking-[.1rem] font-semibold no-underline"
       >
-        Download CV
+        View CV
       </BaseButton>
 
       <div
-        class="absolute top-1/2 right-0 -translate-y-2/4 w-[975px] h-[975px] overflow-hidden pointer-events-none"
+        class="absolute top-1/2 right-0 -translate-y-2/4 w-[975px] h-[100vh] overflow-hidden pointer-events-none"
       >
         <div
           class="absolute top-0 right-0 w-full h-full rounded-full flex justify-center items-center animate-spin"

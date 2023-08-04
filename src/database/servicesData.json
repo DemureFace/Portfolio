@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "icon": "code-alt",
+      "title": "Web Development",
+      "description": "Experienced Front-end developer in web development of weboriented applications for small and large enterprises. Have a solid understanding and knowledge of the objectoriented approach, software engineering principles and concepts.",
+      "button": "Read More"
+    },
+    {
+      "icon": "code-alt",
+      "title": "Web Development",
+      "description": "Experienced Front-end developer in web development of weboriented applications for small and large enterprises. Have a solid understanding and knowledge of the objectoriented approach, software engineering principles and concepts.",
+      "button": "Read More"
+    },
+    {
+      "icon": "code-alt",
+      "title": "Web Development",
+      "description": "Experienced Front-end developer in web development of weboriented applications for small and large enterprises. Have a solid understanding and knowledge of the objectoriented approach, software engineering principles and concepts.",
+      "button": "Read More"
+    }
+  ]
+}
